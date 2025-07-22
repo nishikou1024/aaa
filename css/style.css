@@ -1,1 +1,175 @@
 @charset "UTF-8";
+
+#function {
+    /* background-color: #C0C0C0; */
+    background-image: url(../MetaLife/image51.png);
+    background-size: cover;
+    max-width: 1600px;
+    padding-bottom: 146px;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+}
+
+#function img {
+    width: 40%;
+}
+
+#function .section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 40px;
+}
+
+.small-title {
+    font-size: 25px;
+}
+
+/* PC表示の時は改行しない。レスポンシブ時に解除して改行 */
+#function .pc {
+    display: none;
+}
+
+/* <<< フォントカラー >>> */
+.leaf {
+    color: rgb(3, 142, 95);
+}
+
+.orange {
+    color: #ED6B1A;
+}
+
+/* ファンクションリスト */
+.inner {
+    width: 100%;
+    max-width: 1166px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* ＜＜＜白抜き部分のリスト部分＞＞＞ */
+.function-list li {
+    max-width: 468px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 56px rgba(167, 100, 50, 0.16);
+    padding: 53px 0 51px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.function-list {
+    max-width: 977px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+    text-align: center;
+}
+
+/* ＜＜＜緑のバルーン部分＞＞＞ */
+.solution_head {
+    background-color: rgb(3, 142, 95);
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ballon {
+    width: 95%;
+    max-width: 269px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 0;
+    position: absolute;
+}
+/* ＜＜＜緑のバルーン部分の下三角＞＞＞ */
+.solution_head::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: rgb(3, 142, 95) transparent transparent transparent;
+    border-width: 25.98px 15px 0px 15px;
+    position: absolute;
+    left: 43%;
+    top: 45px;
+}
+
+/* HOW TO  */
+
+#howto {
+    background-color: bisque;
+    padding: 80px 0;
+}
+
+#howto .howto-title {
+    text-align: center;
+    padding-bottom: 60px;
+    font-size: 40px;
+}
+
+#howto img {
+    width: 73%;
+}
+
+.howto-link-list li {
+    max-width: 468px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 56px rgba(167, 100, 50, 0.16);
+    padding: 70px 0 120px;
+    margin-top: 24px;
+    position: relative;
+}
+
+.howto-link-list {
+    max-width: 800px;
+    padding: 40px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+    text-align: center;
+}
+
+.circle {
+    width: 50%;
+    max-width: 90px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 0;
+    position: absolute;
+    background-color: rgb(3, 142, 95);
+    top: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#howto .medium {
+    color: #ED6B1A;
+}
+
+.circle::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: rgb(3, 142, 95) transparent transparent transparent;
+    border-width: 25.98px 15px 0px 15px;
+    position: absolute;
+    left: 43%;
+    bottom: 45px;
+}
+
+
+
+
+

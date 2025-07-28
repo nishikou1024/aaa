@@ -33,3 +33,14 @@ $('nav a').click(function(event) {
     }, 500);
     event.preventDefault();
 });
+
+// slider
+$('.slider').slick({
+    centerMode: true,
+    centerPadding:'20%',
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed:1000,
+    dots: true,
+    variableWidth: true,
+});

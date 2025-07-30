@@ -40,7 +40,46 @@ $('.slider').slick({
     centerPadding:'20%',
     slidesToShow: 1,
     autoplay: true,
-    autoplaySpeed:1000,
+    autoplaySpeed:1500,
     dots: true,
     variableWidth: true,
+    infinite: true,
+});
+
+// top scroll
+$(function  (){
+    togglePageTopButton();
+    
+    $(window).scroll(function(){
+        togglePageTopButton();
+    });
+
+    function togglePageTopButton(){
+        if($(window).scrollTop() > 100){
+            $('#page-top').fadeIn();
+        } else{
+            $('#page-top').fadeOut();
+        }
+    }
+
+    $('#page-top').click(function(event) {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+        event.preventDefault();
+    });
+
+});
+
+
+// 文字フェードイン
+$(window).on('scroll', function(){
+    $('.fade-up').each(function(){
+        var elemTop = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if(scroll > elemTop - windowHeight + 100){
+            $(this).addClass('active');
+        }
+    });
 });

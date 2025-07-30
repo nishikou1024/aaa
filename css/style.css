@@ -163,13 +163,18 @@ header .row {
   background-image: url(../MetaLeaf/image51.png);
   background-size: cover;
   max-width: 1600px;
-  padding-bottom: 146px;
+  padding:60px 0 146px 0;
   background-color:rgba(255,255,255,0.8);
   background-blend-mode:lighten;
 }
 
 #function img {
-  width: 40%;
+  width: 55%;
+  height: 60%;
+}
+
+#function .infomation-text {
+  padding-top: 20px;
 }
 
 .section-title {
@@ -272,6 +277,7 @@ header .row {
 
 #howto img {
   width: 73%;
+  height: 90%;
 }
 
 .howto-link-list li {
@@ -279,7 +285,7 @@ header .row {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 56px rgba(167, 100, 50, 0.16);
-  padding: 70px 0 120px;
+  padding: 70px 0 90px;
   margin-top: 24px;
   position: relative;
 }
@@ -295,9 +301,18 @@ header .row {
   text-align: center;
 }
 
+.howto-link-list a:hover {
+  opacity: 0.7;
+}
+
+.how-doc{
+  padding-top: 20px;
+  color: #333;
+}
+
 .circle {
   width: 50%;
-  max-width: 90px;
+  max-width: 160px;
   color: #fff;
   font-weight: bold;
   line-height: 1;
@@ -323,8 +338,8 @@ header .row {
   border-color: rgb(3, 142, 95) transparent transparent transparent;
   border-width: 25.98px 15px 0px 15px;
   position: absolute;
-  left: 30%;
-  bottom: -300px;
+  left: 40%;
+  bottom: -345px;
 }
 
 /* 小椋担当記載箇所 ↓　*/
@@ -333,7 +348,7 @@ header .row {
   background-color: rgb(241, 239, 239);
   padding-top: 100px;
   padding-bottom: 55px;
-  margin-bottom: 173px;
+  /* margin-bottom: 173px; */
   position: relative;
   text-align: center;
 }
@@ -416,15 +431,13 @@ header .row {
 
 /* サービス */
 
-#service{
+#service-event,#service-room{
   padding-top: 80px;
   padding-bottom: 45px;
   background: linear-gradient(180deg, #fff 0%, #fff 50%, rgb(3, 142, 95) 100%);
 }
 
-
-
-#service h3{
+#service-event h3,#service-room h3{
   font-size: 34px;
   font-weight: bold;
   text-align: center;
@@ -444,13 +457,13 @@ header .row {
   border-radius: 50px;
 }
 
-#service .lead{
+.lead{
   font-weight: bold;
   text-align: center;
   margin-bottom: 50px;
 }
 
-#service .gallery{
+.gallery{
   margin: 0 calc( 50% - 50vw);
 }
 
@@ -461,14 +474,14 @@ header .row {
   will-change: transform, opacity;
 }
 
-#service .gallery-title{
+.gallery-title{
   margin-bottom: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#service .gallery-title span{
+.gallery-title span{
   padding: 10px 45px;
   color: rgb(3, 142, 95);
   border: 1px solid rgb(3, 142, 95);
@@ -582,6 +595,132 @@ header .row {
   height: 100%;
   transition: opacity 0.4s ease;
 }
+
+/* Q&A * */
+#question {
+  margin-bottom: 100px;
+}
+
+
+#question .section-title {
+  padding: 60px 0;
+}
+
+.question-title-a {
+  color: #ED6B1A;
+}
+
+.question-title-c {
+  color: rgb(3, 142, 95);
+}
+
+.cp_qa04 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.cp_qa04 .cp_actab {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 0 1em 0;
+  color: #ffffff;
+}
+.cp_qa04 .cp_actab input {
+  display: none;
+}
+/* 質問 */
+.cp_qa04 .cp_actab label {
+  position: relative;
+  display: block;
+  margin: 0 0.5em 0.5em 2em;
+  padding: 1em 0 2em 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background: #ED6B1A;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.cp_qa04 .cp_actab label span {
+  display: block;
+  padding: 0 2em 1em 2em;
+  border-bottom: 1px solid #ffffff;
+}
+/* --?アイコン */
+.cp_qa04 .cp_actab label::before {
+  position: absolute;
+  left: -30px;
+  content: 'Q';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 99;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: #ED6B1A;;
+}
+/* --▼アイコン */
+.cp_qa04 .cp_actab label::after {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  content: '';
+  width: 15px;
+  height: 8px;
+  background: #ffffff;
+  clip-path: polygon(0 0, 50% 100%, 100% 0);
+  transition: all 0.5s ease;
+}
+/* 答え */
+.cp_qa04 .cp_actab .cp_actab-content {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-height: 0;
+  margin: 0 0 0.5em 0;
+  padding: 0 0 0 5em;
+  transition: max-height 0.5s ease;
+  color: #ffffff;
+}
+/* --!アイコン */
+.cp_qa04 .cp_actab .cp_actab-content::before {
+  position: absolute;
+  left: 50px;
+  content: 'A';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  font-weight: bold;
+  z-index: 99;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  background: rgb(3, 142, 95);
+}
+.cp_qa04 .cp_actab .cp_actab-content p {
+  margin: 0.5em 0.5em 0.5em 0;
+  padding: 1em 1em 1em 3em;
+  border-radius: 0.3em;
+  background: rgb(3, 142, 95);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa04 .cp_actab input:checked ~ .cp_actab-content {
+  max-height: 40em;
+}
+/* 質問をクリックした時の▼アイコンの動き */
+.cp_qa04 .cp_actab input[type=checkbox]:checked + label::after {
+  transform: scale(1, -1);
+}
+
 
 @keyframes zeon{
   0%{

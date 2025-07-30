@@ -344,15 +344,14 @@ header .row {
 
 /* 小椋担当記載箇所 ↓　*/
 .sec-container {
- /* background-color: #f8f5f5; */
   background-color: rgb(241, 239, 239);
   padding-top: 100px;
   padding-bottom: 55px;
-  /* margin-bottom: 173px; */
+  margin-bottom: 173px;
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
-
 
 .blue {
   color: blue;
@@ -362,11 +361,19 @@ header .row {
 
 .content-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: stretch;
   gap: 9px;
   margin-bottom: 29px;
 }
+
+.content-list li {
+   padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+}
+
 
 .cat {
   width: 23%;
@@ -395,6 +402,12 @@ header .row {
   position:absolute;
 }
 
+.cat_read {
+  text-align: center;
+  padding-bottom: 24px;
+  font-size: 14px;
+}
+
 .read {
   text-align: center;
   padding-bottom: 60px;
@@ -403,7 +416,7 @@ header .row {
 
 .cat_img {
   width: 188px;
-  height: 175px;
+  height: 180px;
   object-fit: contain;
   margin: 0 auto 23px;
   max-width: 100%;
@@ -412,7 +425,7 @@ header .row {
 
 .solution_cat {
   background-color: blue;
-  top: -24px;
+  top: -37px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -428,6 +441,34 @@ header .row {
   left: 43%;
   top: 45px;
 }
+
+.about_text {
+  font-size: 18px;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about_text_color {
+  color: #ED6B1A;
+}
+
+.sec-about {
+  background-image: url(../MetaLeaf/image_1.png);
+  background-size: cover;
+  max-width: 1600px;
+  padding-bottom: 146px;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+
+}
+
+.sec-about-title {
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 40px;
+}
+
 
 /* サービス */
 
@@ -787,5 +828,34 @@ header .row {
     .mobile-toggle {
     display: block;
   }
+
+.content-list {
+  flex-wrap: wrap;
+}
+
+ .content-list li  {
+  width: 80%;
+  margin: 25px;
+}    
+
+.solution_cat {
+  background-color: blue;
+  top: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ .cat-read {
+  text-align: center;
+  padding-bottom: 18px;
+  font-size: 90%;
+}
+
+.read {
+  text-align: center;
+  padding-bottom: 12px;
+  font-size: 90%;
+}   
+
 
 }

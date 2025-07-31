@@ -341,12 +341,11 @@ header .row {
   left: 40%;
   bottom: -297px;
 }
-/* 小椋担当記載箇所 ↓　*/
+/* 担当記載箇所 ↓　*/
 .sec-container {
   background-color: rgb(241, 239, 239);
   padding-top: 100px;
   padding-bottom: 55px;
-  margin-bottom: 173px;
   position: relative;
   text-align: center;
   overflow: hidden;
@@ -367,7 +366,7 @@ header .row {
 }
 
 .content-list li {
-    padding: 10px;
+   padding: 10px;
     margin: 0;
     border-bottom: 1px solid #333;
     border-right: 1px solid #333;
@@ -452,14 +451,20 @@ header .row {
   color: #ED6B1A;
 }
 
+.about_read {
+font-size: 24px;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .sec-about {
   background-image: url(../MetaLeaf/image_1.png);
   background-size: cover;
   max-width: 1600px;
-  padding-bottom: 146px;
+  padding: 80px 0;
   background-color:rgba(255,255,255,0.8);
   background-blend-mode:lighten;
-
 }
 
 .sec-about-title {
@@ -837,7 +842,7 @@ footer{
   flex-wrap: wrap;
 }
 
-  .content-list li  {
+ .content-list li  {
   width: 80%;
   margin: 25px;
 }    
@@ -849,7 +854,7 @@ footer{
   transform: translateX(-50%);
 }
 
-  .cat-read {
+ .cat-read {
   text-align: center;
   padding-bottom: 18px;
   font-size: 90%;
@@ -858,8 +863,22 @@ footer{
 .read {
   text-align: center;
   padding-bottom: 12px;
-  font-size: 90%;
+  font-size: 19px;
 }   
+
+.about_read {
+  font-size: 80%;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about_text {
+  font-size: 80%;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+}
 
 .zeon-logo{
   width: 100px;

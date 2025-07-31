@@ -351,6 +351,13 @@ header .row {
   overflow: hidden;
 }
 
+.sec-container .inner {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .blue {
   color: blue;
   line-height: 1;
@@ -371,7 +378,6 @@ header .row {
     border-bottom: 1px solid #333;
     border-right: 1px solid #333;
 }
-
 
 .cat {
   width: 23%;

@@ -170,7 +170,7 @@ header .row {
 
 #function img {
   width: 55%;
-  height: 60%;
+  aspect-ratio: 1/1;
 }
 
 #function .infomation-text {
@@ -204,7 +204,7 @@ header .row {
 /* ファンクションリスト */
 .inner {
   width: 100%;
-  max-width: 1166px;
+  max-width: 700px;
   margin: 0 auto;
   position: relative;
 }
@@ -215,8 +215,8 @@ header .row {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 56px rgba(167, 100, 50, 0.16);
-  padding: 53px 0 51px;
-  margin-top: 24px;
+  padding: 53px 0 90px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -265,8 +265,8 @@ header .row {
 /* HOW TO  */
 
 #howto {
-  background-color: bisque;
   padding: 80px 0;
+  background: linear-gradient(180deg, #fff 0%, #fff 50%, bisque 100%);
 }
 
 #howto .howto-title {
@@ -276,8 +276,8 @@ header .row {
 }
 
 #howto img {
-  width: 73%;
-  height: 90%;
+  width: 50%;
+  aspect-ratio: 1/1;
 }
 
 .howto-link-list li {
@@ -339,9 +339,8 @@ header .row {
   border-width: 25.98px 15px 0px 15px;
   position: absolute;
   left: 40%;
-  bottom: -345px;
+  bottom: -297px;
 }
-
 /* 小椋担当記載箇所 ↓　*/
 .sec-container {
   background-color: rgb(241, 239, 239);
@@ -867,4 +866,45 @@ footer{
   height: 100px;
 
 }
+
+#function .pc {
+  display: block;
+}
+
+.function-list {
+  display: block;
+  margin: auto;
+  width: 450px;
+}
+
+.function-item {
+  padding-bottom: 30px;
+}
+
+.circle::before {
+  bottom: -325px;
+}
+
+.howto-link-list {
+  display: block;
+  margin: auto;
+  width: 450px;
+}
+
+.howto-link-list li {
+  margin-top: 60px;
+}
+
+.circle::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: rgb(3, 142, 95) transparent transparent transparent;
+  border-width: 25.98px 15px 0px 15px;
+  position: absolute;
+  left: 40%;
+  bottom: -345px;
+}
+
 }
